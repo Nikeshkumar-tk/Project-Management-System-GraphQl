@@ -1,0 +1,41 @@
+.addClient{
+    /* position: relative;
+    right: 300px; */
+    height: 40px;
+    width: 150px;
+    background-color: green;
+    border-radius: 5px;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    border-width: 0px;
+    margin: 150px;
+    
+}
+.header-nav-bar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.addProject{
+     position: relative;
+    
+    height: 40px;
+    width: 150px;
+    background-color: green;
+    border-radius: 5px;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    border-width: 0px;
+    margin: 150px;
+    
+}
+.heading{
+    margin: 150px;
+}

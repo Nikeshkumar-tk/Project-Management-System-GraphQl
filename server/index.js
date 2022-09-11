@@ -3,6 +3,7 @@ const app=express();        //initializing express app
 const dotenv=require('dotenv')
 // const connectDB=require('./Config/db')
 const mongoose=require('mongoose');
+const cors=require('cors');
 dotenv.config({path:__dirname+ '/.env'});
 const schema=require('./schema/schema')//requiring schema from schema file
 const {graphqlHTTP}=require('express-graphql');
@@ -18,7 +19,9 @@ console.log(process.env.MONGO_URI)
 mongoose.connect("mongodb+srv://nikeshkumartk:nikeshnikhil@cluster0.gg9nfhw.mongodb.net/test",{
     useNewUrlParser: true,
     useUnifiedTopology: true,
-       }).then(console.log("DATABASE CONECTED")).catch((err)=>console.log(err))
+       }).then(console.log("DATABASE CONECTED")).catch((err)=>console.log(err));
+
+       app.use(cors())
 
 const port=process.env.PORT||5000; //configuring port to run server using .env file
 

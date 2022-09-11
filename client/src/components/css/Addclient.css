@@ -1,0 +1,44 @@
+.form-wrapp{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-wrapp form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-wrapp form input{
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+.form-wrapp form input::placeholder{
+    text-align: center;
+}
+.form-wrapp h3{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-wrapp button{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: red;
+    border-width: 0px;
+    color: #fff;
+    font-size: 20px;
+}
